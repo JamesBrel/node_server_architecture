@@ -1,0 +1,122 @@
+
+### NodeJS Packages
+
+   command_1 : ***npm install <package_name>*** for dependecies
+   command_2 : ***npm install <package_name> --save-dev*** for dev_dependecies
+ * depend.
+    -- mongoose
+    -- dotenv
+    -- express
+
+ - dev_depend.
+    -- nodemon
+    -- eslint eslint-config-prettier
+    -- prettier 
+    -- jest @types/jest
+    -- babel-jest @babel/core @babel/preset-env 
+    -- babel-plugin-transform-es2015-modules-commonjs 
+    -- supertest
+
+    
+-------------------------------------------------
+ * package.json:
+```json
+    "type": "module",
+    "engines": {
+    "vscode": "^version",
+    "node": "^version"
+     },
+    "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lintCheck": "eslint .",
+    "lintFix": "eslint --fix",
+    "formatCheck": "prettier --check .",
+    "formatFix": "prettier --write .",
+    "test": "jest --verbose --forceExit",
+    "testAuto": "jest --watchAll --verbose",
+    "testCoverage": "jest --coverage --verbose --forceExit"
+  },
+```
+
+Note :  
+une fois les Packages installer surtout (eslint et eslint-config-prettier )
+j'exécute : ***npm init @eslint/config***
+
+-------------------------------------------------
+  *.eslintrc.cjs:
+```js
+module.exports = {
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true,
+        "jest": true
+    },
+    "extends": "eslint:recommended",
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+    }
+}
+```
+-------------------------------------------------
+  * .gitignore:
+      node_modules/
+      coverage/ 
+
+-------------------------------------------------
+  * .prettierignore: 
+      package-lock.json
+      node_modules
+      .eslintrc.js
+      .prettierrc
+      .github
+      .gitignore
+      package.json
+      package-lock.json
+
+-------------------------------------------------
+  * .prettierrc
+     {
+       "bracketSpacing": true,
+       "semi": false,
+       "singleQuote": false,
+       "trailingComma": "none",
+       "printWidth": 80,
+       "tabWidth": 2
+    }
+    
+-------------------------------------------------
+ * .babelrc
+```
+{
+    "env": {
+        "test": {
+            "plugins": [
+                "transform-es2015-modules-commonjs"
+            ]
+        }
+    }
+}
+```
+   
+Note :  Babelrc, permet au fichier Test de pourvoir user des Import/export (Es6)
+    
+
+/***
+ * Project: <project_name>,
+ * author: <author_name>
+ * description: <descript_file>
+ * createdAt: <dd/mm/yyyy> at <h:mm am or pm>
+ * updatedAt: <dd/mm/yyyy> at <h:mm am or pm>
+ */
+
+
+/// Remove the comment tags, in order to use the file ,
+/// note: the comment text at up, you must leave, like that , because
+/// it is the cni of the file
