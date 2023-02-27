@@ -1,22 +1,21 @@
-## Architecture Of Node Js Server (MVC)
+# Node Js
 
 ### Auteur : James Brel (The Coder)
 ### Contact : thecoder38@gmail.com, jamesbrel119@gmail.com 
 
----------------------------------------- 
-Note : l'architecture est basé l'ordre MC ==> Model, Controller
+### Architecture Of Node Js Server (MVC)
+
+Note: the architecture is based on the order MC ==> Model, Controller
 
 <img src="img/MV_archit_plan.png" alt="archit plan"  width="200">
 
-----------------------------------------
-
 ### Usage
 
-Après avoir créer le fichier package.json en éxécutant ***npm init***, suivez tout simplement les Etapes suivants
+Once you have the package.json file by running ***npm init***, simply follow these steps
 
-Après avoir télécharger ou cloner le Dépôt Git. 
-  1. aller dans le dossier node_architecture et copier les dossiers
-  2. Puis suivez les Etapes du fichier ***Configuration.txt***
+After downloading or cloning the Git Repository 
+  1. go to the node_architecture folder and copy the folders
+  2. Then follow the steps in the ***Configuration.txt*** file
 
 ----------------------------------------
 
