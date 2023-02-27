@@ -11,6 +11,9 @@ Note : l'architecture est basé l'ordre MC ==> Model, Controller
 ----------------------------------------
 
 ### Usage
+
+Après avoir créer le fichier package.json en éxécutant ***npm init***, suivez tout simplement les Etapes suivants
+
 Après avoir télécharger ou cloner le Dépôt Git. 
   1. aller dans le dossier node_architecture et copier les dossiers
   2. Puis suivez les Etapes du fichier ***Configuration.txt***

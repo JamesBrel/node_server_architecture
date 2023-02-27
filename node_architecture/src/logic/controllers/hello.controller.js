@@ -11,15 +11,15 @@
 /// note: the comment text at up, you must leave, like that , because
 /// it is the cni of the file
 
-// import helloService from "../../data/services/hello.service.js"
+import helloService from "../../data/services/hello.service.js"
 
-// const findHello = ( req, res ) => {
-//   helloService.hello( null, ( error, greeting ) => {
-//     const message = "grettig has been found"
-//     return res.status( 200 ).json( {message, data: greeting} )
-//   } )
-// }
+const findHello = ( req, res ) => {
+    helloService.hello( null, ( error, greeting ) => {
+        const message = "grettig has been found"
+        return res.status( 200 ).json( {message, data: greeting} )
+    } )
+}
 
-// export default {
-//   findHello
-// }
+export default {
+    findHello
+}

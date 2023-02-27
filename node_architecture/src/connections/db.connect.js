@@ -15,19 +15,19 @@
 // import nameApp from "../utils/constants/string.const.js"
 
 
-// const connection = () => {
-//   mongoose
-//     .set( "strictQuery", true )
-//     .connect( process.env.DB, {useNewUrlParser: true, useUnifiedTopology: true} )
-//     .then( ( database ) => {
-//       console.log(
-//         `${nameApp}'s Database Connected on ${database.connection.host} 🔥`
-//       )
-//     } )
-//     .catch( ( err ) => {
-//       console.error( err )
-//       process.exit( 1 )
-//     } )
-// }
+const connection = () => {
+    mongoose
+        .set( "strictQuery", true )
+        .connect( process.env.DB, {useNewUrlParser: true, useUnifiedTopology: true} )
+        .then( ( database ) => {
+            console.log(
+                `${nameApp}'s Database Connected on ${database.connection.host} 🔥`
+            )
+        } )
+        .catch( ( err ) => {
+            console.error( err )
+            process.exit( 1 )
+        } )
+}
 
-// export default {connection}
+export default {connection}

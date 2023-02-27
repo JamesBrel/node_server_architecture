@@ -11,18 +11,18 @@
 /// note: the comment text at up, you must leave, like that , because
 /// it is the cni of the file
 
-// import nameApp from "../utils/constants/string.const.js"
+import nameApp from "../utils/constants/string.const.js"
 
-// const connection = async ( _app ) => {
-//   try {
-//     const port = process.env.PORT || 4300
-//     _app.listen( port, () =>
-//       console.log( `${nameApp}'s Server is running on port : http://localhost:${port}/   🔥` )
-//     )
-//   } catch ( error ) {
-//     console.error( error )
-//     process.exit( 1 )
-//   }
-// }
+const connection = async ( _app ) => {
+    try {
+        const port = process.env.PORT || 4300
+        _app.listen( port, () =>
+            console.log( `${nameApp}'s Server is running on port : http://localhost:${port}/   🔥` )
+        )
+    } catch ( error ) {
+        console.error( error )
+        process.exit( 1 )
+    }
+}
 
-// export default {connection}
+export default {connection}

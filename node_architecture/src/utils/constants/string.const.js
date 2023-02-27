@@ -1,4 +1,4 @@
-// const nameApp = "App_Name"
+const nameApp = "App_Name"
 
-// export default nameApp
+export default nameApp
 

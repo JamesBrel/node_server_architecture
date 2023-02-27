@@ -11,17 +11,17 @@
 /// note: the comment text at up, you must leave, like that , because
 /// it is the cni of the file
 
-// const hello = async (params, callback) => {
-//   let helloWorld
-//   try {
-//     helloWorld = "Hello My Developper and welcome 😁"
-//   } catch (error) {
-//     console.log(error)
-//     return callback("error", null)
-//   }
-//   return callback(null, helloWorld)
-// }
+const hello = async ( params, callback ) => {
+    let helloWorld
+    try {
+        helloWorld = "Hello My Developper and welcome 😁"
+    } catch ( error ) {
+        console.log( error )
+        return callback( "error", null )
+    }
+    return callback( null, helloWorld )
+}
 
-// export default {
-//   hello
-// }
+export default {
+    hello
+}

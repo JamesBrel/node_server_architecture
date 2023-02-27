@@ -11,10 +11,10 @@
 /// note: the comment text at up, you must leave, like that , because
 /// it is the cni of the file
 
-// import helloRoutes from "../logic/routes/hello.routes.js"
+import helloRoutes from "../logic/routes/hello.routes.js"
 
-// const connection = ( _app ) => {
-//   _app.use( helloRoutes.router )
-// }
+const connection = ( _app ) => {
+    _app.use( helloRoutes.router )
+}
 
-// export default {connection}
+export default {connection}

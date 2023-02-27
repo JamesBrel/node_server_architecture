@@ -1,9 +1,9 @@
 /***
- * Project: Yoogo,
- * author: blutec
- * description: This File is the main index.
- * createdAt: 08/02/2023
- * updatedAt:
+ * Project: <project_name>,
+ * author: <author_name>
+ * description: <descript_file>
+ * createdAt: <dd/mm/yyyy> at <h:mm am or pm>
+ * updatedAt: <dd/mm/yyyy> at <h:mm am or pm>
  */
 
 import express from "express"

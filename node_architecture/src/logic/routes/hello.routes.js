@@ -11,13 +11,13 @@
 /// note: the comment text at up, you must leave, like that , because
 /// it is the cni of the file
 
-// import helloController from "../controllers/hello.controller.js"
-// import express from "express"
+import helloController from "../controllers/hello.controller.js"
+import express from "express"
 
-// const router = express.Router()
+const router = express.Router()
 
-// router.get( "/hello", helloController.findHello )
+router.get( "/hello", helloController.findHello )
 
-// export default {
-//   router
-// }
+export default {
+    router
+}
